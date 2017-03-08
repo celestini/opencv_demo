@@ -19,4 +19,11 @@ Face detection using the HAAR feature based cascade classifiers
 Haar features are a set of values obtained by convolving the image with simple kernels each of which are designed to detect features like edges and lines.
 Since this will result in an huge number of computations, the concept of integral images was introduced. Also, not all of these features are always used, only the ones yielding the best results. To further simplify the computation, the concept of a 'cascade of classifiers' is used, where these features are grouped into stages and windows in the image  which fail the early stages are discarded before proceeding to the next stage.
 for a more detailed description, refer to this link: http://docs.opencv.org/trunk/d7/d8b/tutorial_py_face_detection.html
-Note: The codes are used from OpenCV tutorial 
+
+
+Note:haardet.py: detects face from a still image
+haarvid.py: detects face using a camera. Need to install fswebcam package on raspberry PI. 
+
+The codes are from OpenCV tutorial. We have used OpenCV 3.2.0.
+
+
