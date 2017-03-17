@@ -20,6 +20,10 @@ Haar features are a set of values obtained by convolving the image with simple k
 Since this will result in an huge number of computations, the concept of integral images was introduced. Also, not all of these features are always used, only the ones yielding the best results. To further simplify the computation, the concept of a 'cascade of classifiers' is used, where these features are grouped into stages and windows in the image  which fail the early stages are discarded before proceeding to the next stage.
 for a more detailed description, refer to this link: http://docs.opencv.org/trunk/d7/d8b/tutorial_py_face_detection.html
 
+Motion Detection using Optical Flow
+-------------------------------------
+Optical Flow is estimated using Lucas-Kanade method for a sparse feature set (in our example, corners detected using Shi-Tomasi algorithm).
+
 
 Note:haardet.py: detects face from a still image
 haarvid.py: detects face using a camera. Need to install fswebcam package on raspberry PI. 
